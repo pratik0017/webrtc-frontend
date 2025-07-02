@@ -6,7 +6,7 @@ export function Sender2() {
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
-        const ws = new WebSocket("ws://localhost:8080");
+        const ws = new WebSocket("ws://13.233.173.144:8080");
         setSocket(ws);
 
         ws.onopen = () => {
