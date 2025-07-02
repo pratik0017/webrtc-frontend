@@ -11,7 +11,7 @@ export default function Peer() {
     const [videoEnabled, setVideoEnabled] = useState(true);
     const [connected, setConnected] = useState(false);
 
-    const SIGNAL_SERVER = "ws://localhost:8080";
+    const SIGNAL_SERVER = "ws://65.0.17.158:8080";
 
     useEffect(() => {
         socketRef.current = new WebSocket(SIGNAL_SERVER);
