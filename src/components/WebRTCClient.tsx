@@ -63,7 +63,7 @@ export default function WebRTCClient() {
     const socketRef = useRef<WebSocket | null>(null);
     const localStreamRef = useRef<MediaStream | null>(null);
 
-    const SIGNAL_SERVER_URL = "ws://localhost:8080";
+    const SIGNAL_SERVER_URL = "ws://65.0.17.158:8080";
     const STUN_SERVER_URL = "stun:stun.l.google.com:19302";
 
     // --- Signaling Logic ---
